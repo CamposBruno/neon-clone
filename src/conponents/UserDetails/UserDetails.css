@@ -1,0 +1,77 @@
+div.userDetails {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background: #fff;
+  color: #2D3C46;  
+  position: relative;
+  top: 40px;
+  left: 0px;
+  -webkit-transition: all .2s ease-in; /* Safari prior 6.1 */
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  opacity: 0;
+  margin-right: 20px;
+}
+
+div.userDetails.show {
+  top: 20px;
+  opacity: 1;     
+} 
+
+div.userDetails header {
+  border-radius: 10px 10px 0 0;
+  background: #F1F3F4;
+  padding: 10px;
+}
+
+div.userDetails header h3 {
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+div.userDetails header span {  
+  font-size: 13px;
+  
+}
+
+div.userDetails header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+}
+
+div.userDetails header .accountInfo {
+  margin-left: 20px;
+  text-align: left ;
+}
+
+div.userDetails ul {
+  padding: 0;
+  margin-left: 20px;
+  text-align: left;
+}
+
+div.userDetails ul li {
+  list-style: none;
+  padding: 6px;
+  font-weight: bold;
+}
+
+div.userDetails ul li a{
+  text-decoration: none;
+  color: #2D3C46;
+}
+
+div.userDetails ul li a:hover {
+  color: #24A5F0;
+}
+
+div.userDetails ul li .logout, div.userDetails ul li .logout:hover {
+  cursor: pointer;
+  color: red;
+}

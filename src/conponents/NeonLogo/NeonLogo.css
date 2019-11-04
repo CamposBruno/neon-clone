@@ -1,0 +1,25 @@
+.main-menu__logo svg {
+  width: 110px;
+  margin-top: 0;
+  margin-left: 15px;
+}
+  .main-menu__logo svg .neon-logo__letter-e,
+  .main-menu__logo svg .neon-logo__letter-o,
+  .main-menu__logo svg .neon-logo__letter-n {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    will-change: opacity;
+  }
+  .main-menu__logo.is-open svg .neon-logo__letter-e,
+  .main-menu__logo.is-open svg .neon-logo__letter-o,
+  .main-menu__logo.is-open svg .neon-logo__letter-n {
+    opacity: 1;
+     }
+  .main-menu__logo.is-open svg .neon-logo__letter-e {
+    transition-delay: .05s; }
+  .main-menu__logo.is-open svg .neon-logo__letter-o {
+    transition-delay: .1s; }
+  .main-menu__logo.is-open svg .neon-logo__letter-n {
+    transition-delay: .15s; }     
