@@ -47,14 +47,14 @@ export default function Routes() {
           </button>
           <UserDetails visible={detailsVisible} />
         </div>        
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/accountStatement" component={AccountStatement} />
-        <Route path="/buy" component={Buy} />
-        <Route path="/deposit" component={Deposit} />
-        <Route path="/sell" component={Sell} />
-        <Route path="/transfer" component={Transfer} />
-      </Switch>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/accountStatement" component={AccountStatement} />
+          <Route path="/buy" component={Buy} />
+          <Route path="/deposit" component={Deposit} />
+          <Route path="/sell" component={Sell} />
+          <Route path="/transfer" component={Transfer} />
+        </Switch>
       </div>
     </BrowserRouter>
   </>
