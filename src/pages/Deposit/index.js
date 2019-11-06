@@ -4,11 +4,11 @@ import UserDetails from '../../conponents/UserDetails'
 import NeonLogo from '../../conponents/NeonLogo'
 import DollarChart from '../../conponents/DollarChart'
 
-import './Home.css';
+import './Deposit.css';
 
 import customerLogo from '../../assets/img/customer-logo.jpg'
 
-export default function Home() {
+export default function Deposit() {
   const [ detailsVisible, setDetailsVisible ] = useState(false)
   const [ menuVisible, setMenuVisible ] = useState(false)
 
@@ -40,9 +40,7 @@ export default function Home() {
           <UserDetails visible={detailsVisible} />
         </div>        
         <div className="hello">     
-          <h1>Boa Noite, Bruno</h1>
-          <h2>Seu saldo é de R$ 0,00</h2>
-          <DollarChart  />
+          <h1>Depositar</h1>
         </div>     
       </div>
     </>

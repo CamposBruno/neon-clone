@@ -3,11 +3,36 @@
   src: url("./assets/fonts/AvertaRegular.otf") format("opentype");
 }
 
-
 body {
   font-family: Averta, Arial, Helvetica, sans-serif;
+  background: #24A5F0;
+  background: #950D50;
 }
 
 button:focus {
   outline:0;
+}
+
+.buttonArea {
+  position: fixed;
+  top: 20px;
+  right: 10px;  
+  text-align: right;
+}
+.buttonArea button {
+  background: none;
+  border: none;
+
+}
+.buttonArea button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logoWrapper {
+  position: fixed;
+  top: 20px;
+  left: 5px;
+  z-index: 99;
 }

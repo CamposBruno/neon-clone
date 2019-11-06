@@ -2,6 +2,12 @@ import React from 'react'
 import Chart from 'chart.js';
  
 export default function DollarChart() {
+    return  (
+        // A react-chart hyper-responsively and continuusly fills the available
+        // space of its parent element automatically
+          <canvas id="myChart" width="400" height="400"></canvas>
+      ) 
+    
 
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
@@ -41,9 +47,5 @@ export default function DollarChart() {
       }
   });
  
-  return  (
-    // A react-chart hyper-responsively and continuusly fills the available
-    // space of its parent element automatically
-      <canvas id="myChart" width="400" height="400"></canvas>
-  )
+
 }
